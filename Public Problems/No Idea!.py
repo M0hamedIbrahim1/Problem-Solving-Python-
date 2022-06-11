@@ -1,3 +1,6 @@
+#link   :   https://www.hackerrank.com/challenges/no-idea/problem
+#author :   Mohamed Ibrahim 
+
 summ = 0
 n = input()
 I =list(map(int, input().split()))
