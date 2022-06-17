@@ -1,4 +1,7 @@
+#link   : https://www.hackerrank.com/challenges/py-collections-deque/problem
+#author : Mohamed Ibrahim
 
+# deque can be used to add or remove elements from both ends
 from collections import deque
 d = deque()
 for i in range(int(input())):
