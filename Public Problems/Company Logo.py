@@ -7,3 +7,8 @@ c = Counter(sorted(s))
 for i in c.most_common(3):
     print(*i) 
     
+
+    
+    
+# for i in Counter(sorted(input())).most_common(3):
+# 	print(*i)
