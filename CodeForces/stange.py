@@ -1,4 +1,5 @@
-
+#link  : https://codeforces.com/problemset/problem/1560/C
+#author: Mohamed Ibrahim
 for _ in range(int(input())):
   a = int(input())
   k = 1
