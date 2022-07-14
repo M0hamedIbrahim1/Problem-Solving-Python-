@@ -1,7 +1,9 @@
 #link   : https://codeforces.com/problemset/problem/1471/A
 #author : Mohamed Ibrahim
 
+import math as m
 for _ in range(int(input())):
-    N,x = map(int,input().split())
-    A = list(map(int,input().strip().split()))
-    print((sum(A) + x - 1) // x, sum([(i + x - 1) // x for i in A]))
+    n,x = map(int,input().split())
+    lst = list(map(int,input().split()))
+    print(m.ceil(sum(lst)/x) , sum([m.ceil(i/x) for i in lst]) )
+    
