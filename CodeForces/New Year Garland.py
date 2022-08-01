@@ -3,4 +3,4 @@
 
 for t in range(int(input())):
 	a = sorted(list(map(int, input().split())))
-	print('Yes' if a[2] <= a[0] + a[1] + 1 else 'No'
+	print('Yes' if a[2] <= a[0] + a[1] + 1 else 'No')
