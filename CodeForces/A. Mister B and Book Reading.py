@@ -1,4 +1,4 @@
-#link : https://codeforces.com/problemset/problem/868/A
+#link : https://codeforces.com/contest/820/problem/A
 #author : Mohamed Ibrahim
 
 c,v0,v1,a,l=map(int,input().split())
