@@ -1,0 +1,6 @@
+#link   : https://codeforces.com/problemset/problem/415/A
+#author : Mohamed Ibrahim
+
+a,b=map(int,input().split());c=[0]*a
+for i in map(int,input().split()):c[i-1:a]=[i]*(a-i+1);a=min(i-1,a)
+print(*c)
