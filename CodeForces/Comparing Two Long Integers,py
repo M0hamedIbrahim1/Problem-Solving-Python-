@@ -1,0 +1,5 @@
+#link   : https://codeforces.com/problemset/problem/616/A
+#author : Mohamed Ibrahim
+
+a, b = [input().rjust(10 ** 6, '0') for i in range(2)]
+print('>' if a > b else '<' if a < b else '=')
