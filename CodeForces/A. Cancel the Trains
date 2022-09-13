@@ -1,0 +1,9 @@
+# link   : https://codeforces.com/problemset/problem/1453/A
+# author : Mohamed Ibrahim
+
+for _ in range(int(input())):
+	n, m = map(int,input().split())
+	a = set(input().split())
+	b = set(input().split())
+	c = a.intersection(b)
+	print(len(c))
