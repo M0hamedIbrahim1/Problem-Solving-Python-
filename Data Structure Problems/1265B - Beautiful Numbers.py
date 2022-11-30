@@ -24,3 +24,26 @@ for nt in range(int(input())):
 			s+="0"
 		num+=1
 	print (s)
+
+	
+	
+	
+	----------------
+	if __name__ == '__main__':
+	for _ in range (int(input())):
+		n = int(input())
+		l = list(map(int,input().split()))
+		p = [0]*n
+		for i in range(n):
+			p[l[i]-1] = i
+		a,r = n,0
+		ans = ''
+		for i in range (n):
+			a = min(a,p[i])
+			r = max(r,p[i])
+			if r-a == i:
+				ans+='1'
+			else:
+				ans+='0'
+		print(ans)
+	
