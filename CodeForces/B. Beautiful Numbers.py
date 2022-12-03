@@ -17,3 +17,20 @@ for _ in range(int(input())):
 
     
     
+for _ in range (int(input())):
+	n = int(input())
+	l1 = list(map(int, input().split()))
+	arr = [0] * n
+	for i in range (n):
+		arr[l1[i] - 1] = i
+	l = n
+	r = 0
+	s = ""
+	for i in range (n):
+		l = min(l, arr[i])
+		r = max(r, arr[i])
+		if r - l == i:
+			s += "1"
+		else:
+			s += "0"
+	print(s)
