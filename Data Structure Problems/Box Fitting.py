@@ -16,6 +16,35 @@ for _ in range(int(input())):
             k.append(w-j)
             c+=1
     print(c)
+    
+    
+    # other sol : 
+    
+    
+    t=int(input())
+for _ in range(t):
+	n,w=map(int,input().split())
+	lista=list(map(int,input().split()))
+	lista.sort(reverse=True)
+	# print(l)
+	d={}
+	for i in lista:
+		if i not in d:
+			d[i]=1
+		else:
+			d[i]+=1
+ 
+	h=0
+	while(n>0):
+		w1=w
+		for i in d:
+			while d[i]>0 and (i<=w1):
+				w1-=i
+				d[i]-=1
+				n-=1
+		h+=1
+	print(h)
+    
 
 
 
