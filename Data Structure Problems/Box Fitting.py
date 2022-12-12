@@ -21,7 +21,7 @@ for _ in range(int(input())):
     # other sol : 
     
     
-    t=int(input())
+t=int(input())
 for _ in range(t):
 	n,w=map(int,input().split())
 	lista=list(map(int,input().split()))
