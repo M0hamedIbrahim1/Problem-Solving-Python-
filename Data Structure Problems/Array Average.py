@@ -12,3 +12,4 @@ n = int(input())
 lst =list(map(int,input().split()))
 print(resc(lst,0)/n) 
 
+
