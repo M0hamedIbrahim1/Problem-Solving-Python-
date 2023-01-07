@@ -14,3 +14,22 @@ class Solution(object):
             
             
             
+            
+            
+other Soluation ( RECURSION )
+
+class Solution(object):
+    def resc(self,lst,n,sum):
+        if sum == 0 or n == 0:
+            return 0
+        if lst[n-1] <= sum:
+            return max(1+self.resc(lst,n-1,sum-lst[n-1]),self.resc(lst,n-1,sum))
+        else:
+            return self.resc(lst,n-1,sum)
+
+    def maxIceCream(self, costs: List[int], coins: int) -> int:
+        return self.resc(costs,len(costs),coins)
+    
+    
+    
+    
