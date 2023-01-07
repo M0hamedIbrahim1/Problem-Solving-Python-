@@ -1,6 +1,7 @@
 # Link   : https://leetcode.com/problems/maximum-ice-cream-bars/description/
 # author : Mohamed Ibrahim
 
+# Soluation 1 ( Sorting )
 
 class Solution(object):
     def maxIceCream(self, costs: List[int], coins: int) -> int:
@@ -16,7 +17,7 @@ class Solution(object):
             
             
             
-other Soluation ( RECURSION )
+# Soluation 2 ( RECURSION )
 
 class Solution(object):
     def resc(self,lst,n,sum):
