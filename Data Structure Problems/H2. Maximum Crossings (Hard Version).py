@@ -25,3 +25,27 @@ for tcase in range(int(input())):
     print(ans)
 
 
+# other solutation
+
+ def invs(a):
+  l = len(a)
+  if l == 1:
+    return 0
+  x = a[:l // 2]
+  y = a[l // 2:]
+  tot = invs(x) + invs(y)
+
+  x.sort()
+  y.sort()
+  j = 0
+  for i in x:
+    while j < len(y) and y[j] <= i:
+      j += 1
+    tot += j
+  return tot
+
+for _ in range(int(input())):
+  n = int(input())
+  a = list(map(int,input().split()))
+  print(invs(a))   
+
