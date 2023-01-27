@@ -5,16 +5,12 @@
 
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
-        prefix,n=1,len(nums)
-        answer=[1]
-        for i in range(1,n):
-            prefix*=nums[i-1]
-            answer.append(prefix)
-        postfix=1
-        for i in range(n-2,-1,-1):
-            postfix*=nums[i+1]
-            answer[i]*=postfix
-        return answer
-        
-        
+        ans = [1]*len(nums)
+        prefix_sum = 1
+        for i in range(1,len(nums)):
+            ans[i] = ans[i-1]*nums[i-1]
+        for i in range(len(nums)-1,-1,-1):
+            ans[i]*=prefix_sum
+            prefix_sum*=nums[i]
+        return ans
         
