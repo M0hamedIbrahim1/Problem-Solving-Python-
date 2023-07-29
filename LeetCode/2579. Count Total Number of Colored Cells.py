@@ -1,4 +1,4 @@
-# link   : https://leetcode.com/contest/biweekly-contest-99/problems/count-ways-to-group-overlapping-ranges/
+# link  : https://leetcode.com/contest/biweekly-contest-99/problems/count-total-number-of-colored-cells/
 # author : Mohamed Ibrahim
 
 class Solution:
